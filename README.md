@@ -8,5 +8,6 @@ SSP was my final year uni project and I am developing this hone my web-dev skill
 Instructions:
 
   1. Have NodeJS installed
-  2. Run 'not sure what yet'
-  3. will come back to this
+  2. Clone this repository and `cd` to it.
+  3. Run `npm install`
+  4. Run `gulp serve` to run the website and enable watching, live editing etc.
