@@ -1,0 +1,43 @@
+body {
+    margin: 0 auto;
+
+  .hero {
+    font-size: 5em;
+    color: #00A56B;
+    text-align: center;
+    background: url('../images/all-songs-shuffle.png') no-repeat center fixed;
+    margin: auto;
+    padding: 10%;
+  }
+
+  .row {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+header, #main {
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+
+h1 {
+    color: red;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: blue;
+}
