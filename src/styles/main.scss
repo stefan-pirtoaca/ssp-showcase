@@ -1,18 +1,46 @@
 body {
     margin: 0 auto;
+    font-size: 1.8em !important;
 
   .hero {
-    font-size: 5em;
-    color: #00A56B;
+    font-size: 10vw;
+    font-weight: lighter;
+    color: #FFF;
     text-align: center;
-    background: url('../images/all-songs-shuffle.png') no-repeat center fixed;
+    background: url('../images/hero-bg.jpg') no-repeat;
     margin: auto;
     padding: 10%;
   }
 
+  .hero, .content {
+      content: "";
+      display: block;
+      margin: auto;
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+      background-color: rgba(50, 50, 50, 0.4);
+    }
+
   .row {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  [class*="col-"] {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+
+  .col-sm-4, img {
+    max-width: 50%;
+    height: auto;
+    padding: 0;
+
+    @media only screen and (max-width: 767px) {
+      max-width: 100%;
+      padding: 1em 10% 1em 10%;
+    }
   }
 }
 
@@ -24,6 +52,15 @@ body {
     display: none;
 }
 
+.spacer-2 {
+  display: block;
+  height: 2em;
+}
+
+.no-padding {
+  padding: 0;
+}
+
 header, #main {
     text-align: center;
     position: relative;
@@ -31,13 +68,17 @@ header, #main {
 }
 
 h1 {
-    color: red;
+    color: rgb(70, 147, 178) !important;
 }
 
 a {
     text-decoration: none;
 }
 
-a:visited {
-    color: blue;
+em {
+  color: rgb(70, 147, 178);
+}
+
+a:link {
+    color: rgb(70, 147, 178);
 }
