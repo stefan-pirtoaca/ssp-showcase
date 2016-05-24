@@ -1,6 +1,6 @@
 body {
     margin: 0 auto;
-    font-size: 1.8em !important;
+    font-size: 1.6em !important;
 
   .hero {
     font-size: 10vw;
@@ -27,19 +27,21 @@ body {
     padding-bottom: 1em;
   }
 
-  [class*="col-"] {
-    padding-left: 2.5em;
-    padding-right: 2.5em;
-  }
-
   .col-sm-4, img {
     max-width: 50%;
     height: auto;
-    padding: 0;
 
     @media only screen and (max-width: 767px) {
+      max-width: 90%;
+      padding-left: 10%;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1199px) {
       max-width: 100%;
-      padding: 1em 10% 1em 10%;
+    }
+
+    @media only screen and (min-width: 1200px) {
+      max-width: 85%;
     }
   }
 }
@@ -52,9 +54,9 @@ body {
     display: none;
 }
 
-.spacer-2 {
+.spacer-3 {
   display: block;
-  height: 2em;
+  height: 3em;
 }
 
 .no-padding {

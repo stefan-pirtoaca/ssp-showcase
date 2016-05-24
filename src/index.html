@@ -25,50 +25,68 @@
     </div>
 
     <div class="row">
-      <div class="col-md-6">
-        <h1>What is it?</h1>
-        The problem with today’s music player applications is that their shuffle algorithms are random which means that people are not getting the best listening experience they could from their music. 
-      </div>
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="col-md-4">
+          <h1>What is it?</h1>
+          <p>
+            An Android music player which learns which songs you like, as you listen to your library.
+            The more you use it, the better it will learn your preferences.
+          </p>
+        </div>
 
-      <div class="col-md-6">
-        <h1>What does it do?</h1>
-        This project aims to improve that by quantifying the user’s preference on a basic level: if they listen to it a lot, they must like it a lot.
-      </div>
+        <div class="col-md-4">
+          <h1>Why did I make it?</h1>
+          <p>
+            The problem with today’s music player applications is that their shuffle algorithms are random which means that people are not getting the best listening experience they could from their music. 
+          </p>
+        </div>
 
+        <div class="col-md-4">
+          <h1>What does it do?</h1>
+          <p>
+            This project aims to improve that by quantifying the user’s preference on a basic level: if they listen to it a lot, they must like it a lot.
+          </p>
+        </div>
+
+        
+        <div class="col-sm-8">
+          <div class="spacer-3"></div>
+          <p>
+            The application can be installed on any smartphone running <strong>Android 5+</strong>. The logic was written in <em>Java</em>, using the Android API and the User Interface is built from <em>XML</em> files, which are parsed and compiled to Java objects. Currently, there are a total of <strong>2423</strong> lines of code, 1940 of which are Java code, 483 lines are XML code (layout and the Manifest file).
+          </p>
+
+
+          <h1>How does the algorithm work?</h1>
+          <p>
+            Aside from the arcane incantations and the <a href="http://www.barbarianmeetscoding.com/blog/2016/02/25/javascript-mancy-vlog-what-is-ecmascript-6/">Java-mancy</a>?
+          </p>
+
+          <p>
+            It's pretty simple: 
+            <ul>
+              <li>
+                The algorithm assigns a <em>"weight"</em> to each song in your library (in part <em>random</em>, in other part based on <em>how many times you listened to each song</em>).
+              </li>
+              <li>
+                It puts all the weights in a composite data structure, mapping the <em>songs</em> to their <em>weights</em>.
+              </li>
+              <li>
+                When you request a new song, a <em>random number</em> is generated and used to pick a song; kind of like throwing a dart: the <em>bigger</em> the song's weight, the <em>higher chances</em> it has to be picked.
+              </li>
+            </ul> 
+          </p>
+
+        </div>
+        <div class="col-sm-4">
+          <div class="spacer-3"></div>
+          <img src="images/all-songs-shuffle.png">
+        </div>
+        
+      </div>
+      <div class="col-sm-1"></div>
     </div>
 
-    <div class="row">
-      <div class="spacer-2"></div>
-      <div class="col-sm-8">
-        <p>
-          The application can be installed on any smartphone running <strong>Android 5+</strong>. The logic was written in <em>Java</em>, using the Android API and the User Interface is built from <em>XML</em> files, which are parsed and compiled to Java objects. Currently, there are a total of <strong>2423</strong> lines of code, 1940 of which are Java code, 483 lines are XML code (layout and the Manifest file).
-        </p>
-
-
-        <h1>How does the algorithm work?</h1>
-        <p>
-          Aside from the arcane incantations and the <a href="http://www.barbarianmeetscoding.com/blog/2016/02/25/javascript-mancy-vlog-what-is-ecmascript-6/">Java-mancy</a>?
-        </p>
-
-        <p>
-          It's pretty simple: 
-          <ul>
-            <li>
-              The algorithm assigns a <em>"weight"</em> to each song in your library (in part <em>random</em>, in other part based on <em>how many times you listened to each song</em>).
-            </li>
-            <li>
-              It puts all the weights in a composite data structure, mapping the <em>songs</em> to their <em>weights</em>.
-            </li>
-            <li>
-              When you request a new song, a <em>random number</em> is generated and used to pick a song; kind of like throwing a dart: the <em>bigger</em> the song's weight, the <em>higher chances</em> it has to be picked.
-            </li>
-          </ul> 
-        </p>
-
-        <div></div>
-      </div>
-      <div class="col-sm-4"><img src="images/all-songs-shuffle.png"></div>
-    </div>
 
   </body>
 </html>
